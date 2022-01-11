@@ -7,7 +7,7 @@ import "fmt"
 // no nosso caso a função sum_array tem complexidade O(n) quando analizamos o tempo
 // por conta do único for
 
-func sum_array(arr [2]int) int {
+func sum_array(arr []int) int {
 	sum := 0
 	for _, element := range arr {
 		sum = sum + element

@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 // O(n) pois passa por todos os itens para fazer a verificacao
 func BuscaMenor(arr []int) (int, int) {
@@ -22,6 +26,7 @@ func RemoveIndex(arr []int, index int) []int {
 	return append(ret, arr[index+1:]...)
 }
 
+// O(nˆ2)
 func ordenacaoSequencial(arr []int) []int {
 	var ordernedArray []int
 	var minValue int
@@ -37,6 +42,9 @@ func ordenacaoSequencial(arr []int) []int {
 	return ordernedArray
 }
 func main() {
-	var array = []int{10, 2, 4, 5, 1, 6}
-	fmt.Println(ordenacaoSequencial(array))
+	rand.Seed(time.Now().Unix())
+
+	//Generate a random array of length n
+	arr := rand.Perm(1000000)
+	fmt.Println(ordenacaoSequencial(arr))
 }

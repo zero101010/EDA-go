@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // 1,2,3,4,5,6,7,8,9,10
-
+// O(log n)
 func busca_binaria(arr []int, item int) (int, bool) {
 	// inicio do array
 	baixo := 0
