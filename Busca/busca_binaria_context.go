@@ -21,8 +21,3 @@ func search(nums []int, target int) int {
 	return -1
 
 }
-func main() {
-	var array = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-}
-
-// TODO criar busca binária de forma recursiva
