@@ -14,6 +14,14 @@ func reverseString(s string) string {
 	return strings.Join(arr, "")
 }
 
+func reverseString2(s string) (result string) {
+
+	for _, elem := range s {
+		result = string(elem) + result
+	}
+	return result
+}
 func main() {
-	print(reverseString("teste"), "\n")
+	print(reverseString2("teste"), "\n")
+
 }
